@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient3"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/h"
+        android:id="@+id/logo"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coerid"
+        android:hint="COER ID"
+        app:hintTextAppearance="@style/TextLabel1"
+        android:layout_below="@+id/logo">
+
+        <EditText
+            android:id="@+id/coeridinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_background"
+            android:drawableLeft="@drawable/ic_person_white_24dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="monospace"
+            android:hint="COER ID"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:textColorHint="@drawable/hint" />
+    </android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="#4475b7"
+        android:layout_below="@+id/coerid"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/v1"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="Password"
+        app:hintTextAppearance="@style/TextLabel1"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/v1">
+
+        <EditText
+            android:id="@+id/passwordinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_background"
+            android:drawableLeft="@drawable/ic_lock_white_24dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="monospace"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:textColorHint="@drawable/hint" />
+    </android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="#4475b7"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/v2"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v2"
+        android:layout_marginTop="15dp"
+        android:id="@+id/check"
+        android:text="Remember Me"
+        android:textColor="#fff"/>
+
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Forgot Password?"
+         android:textColor="#e57373"
+         android:fontFamily="sans-serif-smallcaps"
+         android:textStyle="bold"
+         android:layout_alignBaseline="@+id/check"
+         android:layout_alignBottom="@+id/check"
+         android:layout_alignEnd="@+id/v2"
+         android:id="@+id/fgpass"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_below="@+id/check"
+        android:background="@drawable/button_style2"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="Login"
+        android:elevation="10dp"
+        android:shadowDx="-5"
+        android:shadowDy="-5"
+        android:shadowColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Don't Have an Account? Sign-Up here"
+        android:textColor="#44abff"
+        android:textStyle="bold"
+        android:id="@+id/sign"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/check_status"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Status"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:id="@+id/status"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+        android:id="@+id/registration_num"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/status"
+        android:layout_marginTop="30dp"
+        android:hint="Enter your registration no."/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registration_num"
+        android:id="@+id/radio"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:id="@+id/complain_radio"
+            android:text="complain" />
+        <RadioButton
+            android:layout_marginStart="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/query_radio"
+            android:text="Query" />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/submit_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/button_style"
+        android:textColor="#f3f3f5"
+        android:textSize="20sp"
+        android:text="@string/submit" />
+
+    <Button
+        android:id="@+id/refresh_status"
+        android:layout_width="match_parent"
+        android:textColor="#f3f3f5"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:textSize="20sp"
+        android:background="@drawable/button_style"
+        android:text="@string/refresh" />
+
+
+</RelativeLayout>

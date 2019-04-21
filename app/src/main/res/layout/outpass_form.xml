@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leave_gradient"
+   >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/leave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Outpass Form"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_dark"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/leave"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="48dp"
+                android:text="Name:"
+                android:textColor="#1b1b1b"
+                android:textSize="22sp" />
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/namee"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/name"
+                android:textSize="22sp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="5dp"
+                android:maxLines="1"
+                android:textColor="#1b1b1b"
+
+                />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="23dp"
+                android:text="Year:"
+                android:textColor="#1b1b1b"
+                android:textSize="23sp" />
+
+
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/year"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:textSize="22sp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/yeare"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#1b1b1b"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch:"
+                android:textSize="23sp"
+                android:layout_below="@id/year"
+                android:id="@+id/branch"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="22dp"
+                android:textColor="#1b1b1b"/>
+
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/branch"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:textSize="22sp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/branche"
+                android:maxLines="1"
+                android:textColor="#1b1b1b"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostelname"
+                android:text="Hostel Name:"
+                android:textSize="23sp"
+                android:layout_below="@id/branch"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="22dp"
+                android:textColor="#1b1b1b"/>
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/hostelname"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:textSize="22sp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/hostelnamee"
+                android:maxLines="1"
+                android:textColor="#1b1b1b"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/roomno"
+                android:text="Room No:"
+                android:textSize="23sp"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/hostelname"
+                android:textColor="#1b1b1b"
+                />
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/roomno"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:textSize="22sp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/roomnoe"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#1b1b1b"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/roomno"
+                android:layout_marginLeft="7dp"
+                android:text="COER ID:"
+                android:id="@+id/coerid"
+                android:textColor="#1b1b1b"
+                />
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/coerid"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:textSize="22sp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/coeride"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#1b1b1b"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/coerid"
+                android:textSize="22sp"
+                android:layout_marginLeft="7dp"
+                android:text="Phone No:"
+                android:id="@+id/phoneno"
+                android:inputType="phone"
+                android:textColor="#1b1b1b"/>
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/phoneno"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:textSize="22sp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/phonenoe"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="#1b1b1b"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="23dp"
+                android:layout_below="@id/phoneno"
+                android:text="Reason:"
+                android:textSize="22sp"
+                android:id="@+id/reason"
+                android:textColor="#1b1b1b"
+                />
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/reason"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:textSize="22sp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/reasone"
+                android:maxLines="1"
+                android:textColor="#1b1b1b"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reason"
+                android:textSize="23sp"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="7dp"
+                android:text="Date:"
+                android:id="@+id/date"
+                android:textColor="#1b1b1b"
+                />
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:layout_alignBaseline="@+id/date"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/datee"
+                android:textSize="22sp"
+                android:maxLines="1"
+                android:textColor="#1b1b1b"
+                android:hint="yyyy/mm/dd"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datee"
+                android:textSize="22sp"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="7dp"
+                android:text="Time From:"
+                android:id="@+id/timefrom"
+                android:textColor="#1b1b1b"
+
+                />
+            <EditText
+                android:id="@+id/timefrome"
+                android:layout_alignBaseline="@id/timefrom"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:layout_below="@id/datee"
+                android:layout_marginLeft="180dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:textSize="22sp"
+                android:maxLines="1"
+                android:textColor="#1b1b1b"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timefrom"
+                android:textSize="22sp"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="7dp"
+                android:text="Time To:"
+                android:id="@+id/timeto"
+                android:textColor="#1b1b1b"
+
+                />
+            <EditText
+                android:id="@+id/timetoe"
+                android:layout_alignBaseline="@id/timeto"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:layout_below="@id/timefrome"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="180dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:textSize="22sp"
+                android:maxLines="1"
+                android:textColor="#1b1b1b"
+                />
+
+            <Button
+                android:id="@+id/submitoutpass"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timeto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/leave_button"
+                android:fontFamily="cursive"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/submitoutpass"
+                android:id="@+id/back1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/leave_button"
+                android:fontFamily="cursive"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

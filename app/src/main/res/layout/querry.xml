@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/check_status"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/query_view"
+        android:textAlignment="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/id_view"
+        android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/query_view"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Query Form"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/t0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_below="@+id/t0"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/t1"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/t1"
+        android:layout_marginLeft="150dp"
+        android:hint="Enter your Name"
+        android:inputType="text"
+        android:id="@+id/name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COER Id:"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/t2"/>
+
+        <EditText
+            android:id="@+id/coer_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/t2"
+            android:layout_alignBottom="@+id/t2"
+            android:layout_alignStart="@+id/query"
+            android:hint="Enter your COER Id"
+            android:maxLength="10"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile no.:"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/t2"
+            android:layout_marginTop="20dp"
+            android:id="@+id/t4"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coer_id"
+            android:layout_marginLeft="150dp"
+            android:hint="Enter your mobile_no"
+            android:inputType="number"
+            android:id="@+id/mobile_no"
+            android:maxLines="10"
+            />
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Queries:"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/t4"
+        android:layout_marginTop="20dp"
+        android:id="@+id/t3"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobile_no"
+        android:layout_marginLeft="150dp"
+        android:hint="Description"
+        android:inputType="textLongMessage"
+        android:id="@+id/query"
+        android:maxLines="10"
+        />
+
+    <Button
+        android:id="@+id/query_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/t3"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_style"
+        android:text="@string/submit"
+        android:textColor="#f3f3f5"
+        android:textSize="20sp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/query_submit"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_style"
+            android:text="@string/back"
+            android:textColor="#f3f3f5"
+            android:textSize="20sp"
+            android:id="@+id/back"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
